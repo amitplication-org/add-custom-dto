@@ -30,7 +30,6 @@ export const CustomerCreate = (props: CreateProps): React.ReactElement => {
             { label: "Regular", value: "Regular" },
           ]}
           optionText="label"
-          allowEmpty
           optionValue="value"
         />
         <TextInput label="Email" source="email" type="email" />

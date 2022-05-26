@@ -31,15 +31,12 @@ class CustomerCreateInput {
   address?: AddressWhereUniqueInput | null;
 
   @ApiProperty({
-    required: false,
+    required: true,
     enum: EnumCustomerCustomerType,
   })
   @IsEnum(EnumCustomerCustomerType)
-  @IsOptional()
-  @Field(() => EnumCustomerCustomerType, {
-    nullable: true,
-  })
-  customerType?: "Gold" | "Silver" | "Regular" | null;
+  @Field(() => EnumCustomerCustomerType)
+  customerType!: "Gold" | "Silver" | "Regular";
 
   @ApiProperty({
     required: false,

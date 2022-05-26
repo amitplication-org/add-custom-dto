@@ -42,15 +42,14 @@ class Customer {
   createdAt!: Date;
 
   @ApiProperty({
-    required: false,
+    required: true,
     enum: EnumCustomerCustomerType,
   })
   @IsEnum(EnumCustomerCustomerType)
-  @IsOptional()
   @Field(() => EnumCustomerCustomerType, {
     nullable: true,
   })
-  customerType?: "Gold" | "Silver" | "Regular" | null;
+  customerType?: "Gold" | "Silver" | "Regular";
 
   @ApiProperty({
     required: false,

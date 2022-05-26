@@ -39,7 +39,7 @@ class CustomerUpdateInput {
   @Field(() => EnumCustomerCustomerType, {
     nullable: true,
   })
-  customerType?: "Gold" | "Silver" | "Regular" | null;
+  customerType?: "Gold" | "Silver" | "Regular";
 
   @ApiProperty({
     required: false,
