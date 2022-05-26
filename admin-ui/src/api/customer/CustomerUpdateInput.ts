@@ -3,7 +3,7 @@ import { OrderUpdateManyWithoutCustomersInput } from "./OrderUpdateManyWithoutCu
 
 export type CustomerUpdateInput = {
   address?: AddressWhereUniqueInput | null;
-  customerType?: "Gold" | "Silver" | "Regular" | null;
+  customerType?: "Gold" | "Silver" | "Regular";
   email?: string | null;
   firstName?: string | null;
   lastName?: string | null;

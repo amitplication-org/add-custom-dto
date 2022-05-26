@@ -4,7 +4,7 @@ import { Order } from "../order/Order";
 export type Customer = {
   address?: Address | null;
   createdAt: Date;
-  customerType?: "Gold" | "Silver" | "Regular" | null;
+  customerType?: "Gold" | "Silver" | "Regular";
   email: string | null;
   firstName: string | null;
   id: string;
