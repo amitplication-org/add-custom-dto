@@ -40,6 +40,8 @@ async function main() {
 
   SwaggerModule.setup(swaggerPath, app, document, swaggerSetupOptions);
 
+  console.log(`server is running on ${PORT}`);
+  
   void app.listen(PORT);
 
   return app;

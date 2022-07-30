@@ -14,16 +14,17 @@ import { ApiProperty } from "@nestjs/swagger";
 import { CustomerWhereInput } from "./CustomerWhereInput";
 import { Type } from "class-transformer";
 import { CustomerOrderByInput } from "./CustomerOrderByInput";
+import { CustomerWhereInputWithFilterEnum } from "../dtos/CustomerWhereInputWithFilterEnum";
 
 @ArgsType()
 class CustomerFindManyArgs {
   @ApiProperty({
     required: false,
-    type: () => CustomerWhereInput,
+    type: () => CustomerWhereInputWithFilterEnum,
   })
-  @Field(() => CustomerWhereInput, { nullable: true })
-  @Type(() => CustomerWhereInput)
-  where?: CustomerWhereInput;
+  @Field(() => CustomerWhereInputWithFilterEnum, { nullable: true })
+  @Type(() => CustomerWhereInputWithFilterEnum)
+  where?: CustomerWhereInputWithFilterEnum;
 
   @ApiProperty({
     required: false,
