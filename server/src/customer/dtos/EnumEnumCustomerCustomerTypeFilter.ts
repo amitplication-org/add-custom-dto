@@ -50,5 +50,5 @@ export class EnumEnumCustomerCustomerTypeFilter {
     nullable: true,
   })
   @Type(() => String)
-  not?: EnumEnumCustomerCustomerTypeFilter;
+  not?: EnumCustomerCustomerType;
 }
